@@ -12,31 +12,7 @@
 		}
 	}
 
-	table {
-		width: 70%;
-		margin: 20px auto;
-		position: relative;
-		tr {
-			td {
-				padding: 2px 8px;
-				img {
-					width: 28px;
-				}
-				p {
-					font-size: 18px;
-				}
-			}
-		}
-		&:after {
-			content: '';
-			position: absolute;
-			width: 2px;
-			height: 100%;
-			background: $main;
-			top: 0;
-			left: 40px;
-		}
-	}
+	
 
 	@include breakpoint(tablet) {
 	

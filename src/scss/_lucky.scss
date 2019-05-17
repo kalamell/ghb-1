@@ -1,42 +1,61 @@
-.profile {
-	@extend %clearfix;
-	.profile-pic {
-		width: 100px;
-		height: 100px;
-		overflow: hidden;
-		margin: 0 auto;
-		border-radius: 50%;
-		img {
-			min-width: 150%;
-			margin-left: -25%;
+.lucky {
+
+	.lucky-wrap {
+		background: $white;
+		border: 1px solid $main;
+		border-radius: 10px;
+		padding: 40px 0;
+		text-align: center;
+		.lucky-title {
+			padding: 0 40px;
+			h2 {font-size: 38px;}
+			h3 {font-size: 26px;}
 		}
 	}
-
-	table {
-		width: 70%;
-		margin: 20px auto;
-		position: relative;
-		tr {
-			td {
-				padding: 2px 8px;
-				img {
-					width: 28px;
-				}
+	.reward {
+		background: $main;
+		width: 99%;
+		display: block;
+		margin: 0 auto;
+		padding: 10px 0;
+		ul {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: space-between;
+			li {
+				width: 49%;
+				&:first-child {text-align: right;}
+				&:last-child {text-align: left;}
+				img {width: 70px;}
+				h5 {font-size: 22px;}
 				p {
-					font-size: 18px;
+					font-size: 16px;
+					line-height: .9;
 				}
 			}
 		}
-		&:after {
-			content: '';
-			position: absolute;
-			width: 2px;
-			height: 100%;
-			background: $main;
-			top: 0;
-			left: 40px;
+	}
+
+	.announce {
+		table {
+			&:after {left: 90px;}
+			tr {
+				text-align: left;
+				td {
+					font-size: 18px;
+					line-height: .5;
+					padding: 0 8px;
+					&:first-child {
+						font-size: 42px;
+						color: $main;
+					}
+					img {width: 24px;}
+				}
+			}
 		}
 	}
+	
 
 	@include breakpoint(tablet) {
 	
