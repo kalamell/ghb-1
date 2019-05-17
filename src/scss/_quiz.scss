@@ -1,0 +1,55 @@
+.quiz {
+	
+	.title-quiz {
+		.title-btn {
+			margin-left: 0;
+			font-size: 18px;
+			width: 60px;
+			padding: 0;
+		}
+		.ask {
+			padding: 10px 10px 10px 30px;
+			p {font-size: 24px;}
+			span {
+				font-size: 34px;
+				color: $main;
+				display: block;
+				text-align: center;
+			}
+		}
+		.ans {
+			form {
+				input[type="radio"] {display: none;}
+				label {
+					width: 100%;
+					text-align: center;
+					border-radius: 10px;
+					border: 1px solid $main;
+					background: $white;
+					display: block;
+					font-size: 18px;
+					padding: 5px 0;
+					margin: 0 0 20px;
+				}
+				input[type="radio"]:checked + label {
+					background: $main;
+					color: $white;
+				}
+				.btn {margin-top: 30px;}
+			}
+		}
+	}
+
+	@include breakpoint(tablet) {
+	
+	}
+	@include breakpoint(tablet-wide) {
+	
+	}
+	@include breakpoint(mobile) {
+		
+	}
+	@include breakpoint(over) {
+		
+	}
+}

@@ -1,0 +1,26 @@
+.thankyou {
+	.thank-wrap {
+		display: none;
+		text-align: center;
+		padding: 30px;
+		img {width: 50%;}
+		p {
+			font-size: 24px;
+			padding: 20px;
+		}
+		&.active {display: block;}
+	}
+
+	@include breakpoint(tablet) {
+	
+	}
+	@include breakpoint(tablet-wide) {
+	
+	}
+	@include breakpoint(mobile) {
+		
+	}
+	@include breakpoint(over) {
+		
+	}
+}

@@ -1,0 +1,70 @@
+.answer {
+	
+	.ans-wrap {
+		background: $white;
+		border: 1px solid $main;
+		border-radius: 10px;
+		padding: 20px;
+		text-align: center;
+		margin-bottom: 30px;
+		.ans-ans {
+			display: none;
+			&.active {display: block;}
+			h3 {
+				font-size: 54px;
+			    width: 200px;
+			    margin: 0 auto;
+			    line-height: .7;
+			}
+			&.correct {
+				color: $green;
+				h3 {color: $green;}
+			}
+			&.wrong {
+				color: $red;
+				h3 {color: $red;}
+				p {color: $green;}
+			}
+			i {font-size: 76px;}
+			p {
+				font-size: 24px;
+				margin: 20px 0 10px;
+			}
+		}
+		.share {
+			margin-top: 20px;
+			p {font-size: 30px;}
+			.social {
+				& > * {
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+			
+			span {
+				font-size: 18px;
+				color: $main;
+				margin: 0 10px;
+			}
+			a {
+				width: 34px;
+				height: 34px;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+		}
+	}
+
+	@include breakpoint(tablet) {
+	
+	}
+	@include breakpoint(tablet-wide) {
+	
+	}
+	@include breakpoint(mobile) {
+		
+	}
+	@include breakpoint(over) {
+		
+	}
+}

@@ -1,0 +1,34 @@
+extends docwrap
+
+
+append config
+	- var keywords = ''
+	- var description = ''
+	- var page = 'quiz'
+	- var title = 1
+
+block style
+	
+block content
+	.container
+		
+		.title-quiz
+			.title-btn.btn คำถาม
+			.ask
+				p อัตราดอกเบี้ยเงินกู้ “โครงการบ้าน ธอส. เพื่อคุณ กู้ซื้อที่ดินพร้อมอาคาร ที่ 1 – ปี ที่ 3”
+				span MRR เท่าไหร่?
+			.ans
+				form(action="")
+					input(type="radio" name="ghb" id="1")
+					label(for="1") ก. MRR 1
+					input(type="radio" name="ghb" id="2")
+					label(for="2") ข. MRR 2
+					input(type="radio" name="ghb" id="3")
+					label(for="3") ค. MRR 3
+		
+					button(type="submit" class="btn") ส่งคำตอบ
+		
+					
+block script
+
+

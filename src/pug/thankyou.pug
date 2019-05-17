@@ -1,0 +1,23 @@
+extends docwrap
+
+
+append config
+	- var keywords = ''
+	- var description = ''
+	- var page = 'thankyou'
+	- var title = 1
+
+block style
+	
+block content
+	.container
+		.thank-wrap.correct
+			img(src="../assets/images/mascot-2.png", alt="")
+			p ขอบคุณที่ร่วมสนุกกิจกรรม สามารถตรวจสอบรายชื่อผู้โชคดีได้ทุกวันที่ 5 ของทุกเดือน
+		.thank-wrap.wrong.active
+			img(src="../assets/images/mascot-1.png", alt="")
+			p ขอบคุณที่ร่วมสนุกครับพลาดไปนิดเดียว แต่อย่าเพิ่งยอมแพ้ เรายังมีกิจกรรมให้สะสมคะแนนอีกเพียบ!		
+					
+block script
+
+

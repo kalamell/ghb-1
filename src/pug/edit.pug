@@ -1,0 +1,57 @@
+extends docwrap
+
+
+append config
+	- var keywords = ''
+	- var description = ''
+	- var page = 'register'
+	- var title = 1
+
+block style
+	
+block content
+	.container
+		form(action="")
+			ul
+				li
+					input.half(type="text" class="mainLoginInput" placeholder="*ชื่อ")
+					input.half(type="text" class="mainLoginInput" placeholder="*นามสกุล") 
+				li
+					span เพศ
+					input(type="radio" name="gender" id="man")
+					span.radio
+					label(for="man") ชาย
+					input(type="radio" name="gender" id="woman")
+					span.radio
+					label(for="woman") หญิง
+					input(type="radio" name="gender" id="other")
+					span.radio
+					label(for="other") ไม่ระบุ
+				li
+					select.half(name="age")
+						option(value="*อายุ") อายุ
+						option(value="*อายุ") อายุ
+						option(value="*อายุ") อายุ
+						option(value="*อายุ") อายุ
+					select.half(name="occu")
+						option(value="อาชีพ") อาชีพ
+						option(value="อาชีพ") อาชีพ
+						option(value="อาชีพ") อาชีพ
+						option(value="อาชีพ") อาชีพ
+				li
+					input(type="text" class="mainLoginInput" placeholder="*เบอร์โทรศัพท์")
+				li
+					input(type="text" class="mainLoginInput" placeholder="อีเมล์ (ถ้ามี)")
+				li
+					input(type="text" class="mainLoginInput" placeholder="*ที่อยู่ (สำหรับการจัดส่งของรางวัล)")
+				li
+					input(type="text" class="mainLoginInput" placeholder="*จังหวัด")
+				li
+					input(type="checkbox" id="accept")
+					span.select
+					label(for="accept") ยอมรับเงื่อนไขและข้อตกลง
+			button(type="submit" class="btn") บันทึก
+					
+block script
+
+
