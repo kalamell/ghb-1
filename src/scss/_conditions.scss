@@ -3,13 +3,14 @@
 	.header,
 	.fixed-menu {display: none;}
 	.conditions-title {
-		position: fixed;
+		position: absolute;
 		top: 0;
 		background: $white;
 		width: 100%;
 	    text-align: center;
 	    font-size: 22px;
 	    padding: 10px 0;
+	    @include breakpoint(mobile) {position: fixed;}
 	    h2 {color: $main;}
 	    a {
 	    	position: absolute;
@@ -21,6 +22,9 @@
 	    }
 	}
 	.conditions-body {
+		overflow: scroll;
+		height: 736px;
+		@include breakpoint(mobile) {height: auto;}
 		ul {
 			margin-top: 50px;
 			li {
@@ -30,11 +34,12 @@
 		}
 	}
 	.condition-foot {
-		position: fixed;
+		position: absolute;
 		bottom: 0;
 		width: 100%;
 		background: $white;
 		padding: 20px 0;
+		@include breakpoint(mobile) {position: fixed;}
 		form {
 			text-align: center;
 			input[type="radio"] {display: none;}
