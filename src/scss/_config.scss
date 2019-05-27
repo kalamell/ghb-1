@@ -31,7 +31,7 @@ $MQs: true;
 	    $bp-tablet: "(max-width: 70em)";
 	    $bp-tablet-wide: "(min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)";
 	    $bp-desktop: "(max-width: 100em)";
-	    $bp-over: "(min-width: 1460px)";
+	    $bp-over: "(min-width: 320px) and (max-width: 374px)";
 
 	  	
 	    @if $point == desktop {
@@ -359,6 +359,7 @@ table {
 		background: $main;
 		top: 0;
 		left: 40px;
+		@include breakpoint(over) {left: 35px;}
 	}
 }
 
