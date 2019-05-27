@@ -1,5 +1,8 @@
 .conditions {
 	position: relative;
+	.content {
+		min-height: 100%;
+	}
 	.header,
 	.fixed-menu {display: none;}
 	.conditions-title {
@@ -22,11 +25,12 @@
 	    }
 	}
 	.conditions-body {
+		.container {height: 100%;}
 		overflow: scroll;
 		height: 736px;
 		@include breakpoint(mobile) {height: auto;}
 		ul {
-			margin: 50px 0 100px;
+			margin: 50px 0 120px;
 			li {
 				font-size: 16px;
 				margin-bottom: 10px;
