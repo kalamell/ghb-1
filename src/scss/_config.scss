@@ -337,7 +337,7 @@ h1,h2,h3,h4,h5,h6,p {color: $black;}
 }
 
 table {
-	width: 70%;
+	width: 250px;
 	margin: 20px auto;
 	position: relative;
 	tr {
@@ -358,7 +358,7 @@ table {
 		height: 100%;
 		background: $main;
 		top: 0;
-		left: 48px;
+		left: 42px;
 		@include breakpoint(over) {left: 44px;}
 	}
 }
